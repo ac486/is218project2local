@@ -12,7 +12,7 @@ error_reporting(-1);
 ini_set('display_errors', 'On');
 
 
-$db = new PDO('mysql:host=localhost;dbname=employees;charset=utf8',
+$db = new PDO('mysql:host=localhost;dbname=collegesproject;charset=utf8',
    'root',
    'wildfoot',
    array(
