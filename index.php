@@ -10,6 +10,17 @@
 <?php
 error_reporting(-1);
 ini_set('display_errors', 'On');
+
+
+$db = new PDO('mysql:host=localhost;dbname=employees;charset=utf8',
+   'root',
+   'wildfoot',
+   array(
+      PDO::ATTR_EMULATE_PREPARES => false,
+      PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
+   )
+);
+
 include 'pages.php';
 if(isset($_GET['page'])){
   $qry = new $_GET['page'];
